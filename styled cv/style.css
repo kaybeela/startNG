@@ -1,0 +1,26 @@
+body {
+    color: #000000;
+    margin: 0 auto;
+    text-align: justify;
+    border: 1px solid;
+    width: 1120px;
+}
+body h4 {
+    color: rgb(138, 189, 189);
+}
+.header, .section {
+    width: 1100px;
+    margin-left: 10px;
+}
+#header-img {
+    margin-right: -128px;    
+}
+.section-exp1 {
+    margin-left: 150px;
+}
+.section-exp2 {
+    margin-left: 250px;
+}
+.section-exp3 {
+    margin-left: 100px;
+}
