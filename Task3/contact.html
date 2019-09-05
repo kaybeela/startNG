@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(192, 214, 240);  
+            }
+        </style>
+    </head>
+    <h2 style="text-align: center; font-size: 14px;">Please fill the below form and i will get back to you within the next 24hrs<br>Thank you</h2>
+    <body>
+        <form action="#" method="post" name="contact" style="padding-right: 100px;">
+            <label>Name:<input id="nam" name="Name" type="text" placeholder="Enter your Name here" 
+                width="200px" height="30px"></label><br><br>
+            <label>Email:<input id="mail" name="email" type="text" placeholder="Enter your Email here"
+                width="20px" height="30px"></label><br><br>
+            <label>Title:<input id="tit" name="title" type="text" placeholder="Enter your Title here"
+                width="20px" height="30px"></label><br><br>
+            <label>Message:<input id="msg" name="message" type="text" placeholder="Enter your Message here"
+                width="300px" height="100px"></label><br><br>
+            <button onclick="validate()">Submit</button>
+        </form>
+        <script type="text/javascript">
+
+        function validate() {
+            var inpnam = document.getElementById("nam").value;
+            var inpmail = document.getElementById("mail").value;
+            var inptit = document.getElementById("tit").value;
+            var inpmsg = document.getElementById("msg").value;
+
+            if (inpnam.length < 4) {
+                alert("name is too short");
+                }
+
+            if (inptit.length < 3) {
+                alert("title is too short");
+                }
+
+            if (inpmsg.length < 20) {
+                alert("message cannot be less than 20 words");
+                }
+
+            if(inpmail.indexOf("@") == -1 || inpmail.length < 6) {
+                alert("Enter correct email address");
+                }
+        } 
+        </script> 
+    </body>
+</html>
